@@ -1,0 +1,15 @@
+# Initializing two identical lists
+list_a = [1, 2, 3]
+list_b = [1, 2, 3]
+
+items_to_add = [4, 5]
+
+# append() adds the entire object as a single element at the end
+list_a.append(items_to_add)
+print("Using append():", list_a)
+# Output: [1, 2, 3, [4, 5]]
+
+# extend() iterates through the iterable and adds each element individually
+list_b.extend(items_to_add)
+print("Using extend():", list_b)
+# Output: [1, 2, 3, 4, 5]
